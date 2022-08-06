@@ -55,7 +55,8 @@ const Shop = () => {
           Shopping Cart: {items} Items <br/>
           Total: ${total}
         </div>
-        <button onClick={handleClear}>Clear Cart</button>
+        <button onClick={handleClear} id="clearCart">Clear Cart</button>
+        <button id="checkout">Checkout</button>
       </div>
     </div>
 
