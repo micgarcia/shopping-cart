@@ -10,7 +10,13 @@ import './styles/App.css'
 
 function App() {
   return (
+
     <div className="App">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"></link>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}></Route>
@@ -26,18 +32,3 @@ function App() {
 
 export default App;
 
-/*
-  -Have a homepage with links to shop and shopping cart
-    -Shop page has items to buy with ability to increment how many
-      items they want. Each item has add to cart button.
-    -Cart page (or could be on same page as shop) will display what
-      and how many items are in the cart.
-
-  -Will need a route for homepage, shop page and maybe cart page
-  -Will need components for:
-    -homepage
-    -shop page
-    -cart page
-    -for products
-    -nav bar
-*/

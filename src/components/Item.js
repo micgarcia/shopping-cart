@@ -21,7 +21,7 @@ const Item = ({info, handleClick}) => {
         <img className='albumCover' alt='' src={info.cover}></img>
         <h2 className='albumName'>{info.name}</h2>
         <h3 className='albumArtist'>{info.artist}</h3>
-        <h4 className='albumPrice'>{info.price}</h4>
+        <h4 className='albumPrice'>${info.price}</h4>
       </div>
       <form className='itemForm' onSubmit={handleSubmit}>
         <label>Quantity:</label>

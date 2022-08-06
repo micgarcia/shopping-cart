@@ -1,12 +1,18 @@
 import React from 'react';
-import Navbar from './Navbar.js';
+import {Link} from 'react-router-dom'
 
 const Home = () => {
 
   return (
     <div id="homePage">
-      <h1>Homepage</h1>
-      <Navbar />
+      <div className="iconContainer">
+        <Link to="/" className="material-icons house" id="homeIcon">
+          home
+        </Link>
+        <Link to="/shop" className="material-icons store" id="storeIcon">
+          store
+        </Link>
+      </div>
     </div>
   )
 }

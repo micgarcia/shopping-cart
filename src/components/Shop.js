@@ -3,6 +3,10 @@ import Navbar from './Navbar.js';
 import Item from './Item.js';
 
 const Shop = () => {
+  if (localStorage.getItem('amount') === null) {
+    localStorage.setItem('amount', 0);
+    localStorage.setItem('totalPrice', 0);
+  }
 
   const [items, setItems] = useState(localStorage.getItem('amount'));
   const [total, setTotal] = useState(localStorage.getItem('totalPrice'));
@@ -27,9 +31,9 @@ const Shop = () => {
     setTotal(0);
   }
 
+
   return (
-    <div>
-      <h1>Shop</h1>
+    <div id="shopPage">
       <Navbar />
       <div className='itemGrid'>
         <Item handleClick = {handleClick} info={

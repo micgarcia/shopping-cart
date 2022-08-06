@@ -7,12 +7,15 @@ import {
 const Navbar = () => {
 
   return (
-    <div>
-      Navbar
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-      </nav>
+    <div className="navBar">
+      <div className="iconContainer">
+        <Link to="/" className="material-icons house" id="shopHomeIcon">
+          home
+        </Link>
+        <Link to="/shop" className="material-icons store" id="shopStoreIcon">
+          store
+        </Link>
+      </div>
     </div>
   )
 }
