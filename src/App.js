@@ -3,11 +3,10 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './components/Home.js';
 import Shop from './components/Shop.js';
-import Cart from './components/Cart.js';
+import './styles/App.css'
 
 function App() {
   return (

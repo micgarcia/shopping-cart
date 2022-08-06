@@ -34,20 +34,58 @@ const Shop = () => {
       <div className='itemGrid'>
         <Item handleClick = {handleClick} info={
           {
-            cover: '',
-            name: 'Blonde',
+            cover: 'https://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/frank-ocean-blond-compressed-0933daea-f052-40e5-85a4-35e07dac73df.jpg',
+            name: 'Blond',
             artist: 'Frank Ocean',
             price: 14.99
           }
         }/>
         <Item handleClick = {handleClick} info={
           {
-            cover: '',
+            cover: 'https://m.media-amazon.com/images/I/71v0b7YG+zL._SL1500_.jpg',
             name: '2014 Forest Hills Drive',
             artist: 'J. Cole',
             price: 11.99
           }
         }/>
+
+        <Item handleClick = {handleClick} info={
+          {
+            cover: 'https://lastfm.freetls.fastly.net/i/u/770x0/95f441a398374c7acc4ac72667ceb42e.jpg',
+            name: '1989',
+            artist: 'Taylor Swift',
+            price: 12.99
+          }
+        }/>
+
+        <Item handleClick = {handleClick} info={
+          {
+            cover: 'https://f4.bcbits.com/img/a0227791277_10.jpg',
+            name: 'Sad Clown Bad Summer EP',
+            artist: 'Atmosphere',
+            price: 9.99
+          }
+        }/>
+
+        <Item handleClick = {handleClick} info={
+          {
+            cover: 'https://m.media-amazon.com/images/I/51USihwOUeL.jpg',
+            name: 'Worthy',
+            artist: 'Beautiful Eulogy',
+            price: 12.99
+          }
+        }/>
+
+        <Item handleClick = {handleClick} info={
+          {
+            cover: 'https://m.media-amazon.com/images/I/51v8Vm3ij3L.jpg',
+            name: '808s and Heartbreak',
+            artist: 'Kanye West',
+            price: 13.99
+          }
+        }/>
+
+
 
       </div>
       <div className="cartContainer">

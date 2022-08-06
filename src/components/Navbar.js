@@ -1,13 +1,8 @@
 import React from "react";
 import {
-  BrowserRouter,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
-import Home from './Home.js';
-import Shop from './Shop.js';
-import Cart from './Cart.js';
+
 
 const Navbar = () => {
 
