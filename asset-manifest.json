@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/micgarcia/shopping-cart/static/css/main.b45bbc8d.css",
+    "main.js": "/micgarcia/shopping-cart/static/js/main.0ec9e578.js",
+    "index.html": "/micgarcia/shopping-cart/index.html",
+    "main.b45bbc8d.css.map": "/micgarcia/shopping-cart/static/css/main.b45bbc8d.css.map",
+    "main.0ec9e578.js.map": "/micgarcia/shopping-cart/static/js/main.0ec9e578.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b45bbc8d.css",
+    "static/js/main.0ec9e578.js"
+  ]
+}
