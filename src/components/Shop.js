@@ -1,22 +1,61 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from './Navbar.js';
 import Item from './Item.js';
 
 const Shop = () => {
+
+  const [items, setItems] = useState(localStorage.getItem('amount'));
+  const [total, setTotal] = useState(localStorage.getItem('totalPrice'));
+
+  const handleClick = (num, price) => {
+    const totalPrice = (num * price);
+    const roundPrice = Math.round(totalPrice * 100) / 100;
+    const finalAmt = parseInt(num) + parseInt(items);
+
+    const finalPrice = Math.round((parseFloat(total) + parseFloat(roundPrice)) * 100) / 100;
+
+    localStorage.setItem('amount', finalAmt);
+    localStorage.setItem('totalPrice', finalPrice);
+
+    setItems(finalAmt);
+    setTotal(finalPrice);
+  }
+
+  const handleClear = () => {
+    localStorage.clear();
+    setItems(0);
+    setTotal(0);
+  }
 
   return (
     <div>
       <h1>Shop</h1>
       <Navbar />
       <div className='itemGrid'>
-        <Item info={
+        <Item handleClick = {handleClick} info={
           {
+            cover: '',
             name: 'Blonde',
             artist: 'Frank Ocean',
             price: 14.99
           }
         }/>
+        <Item handleClick = {handleClick} info={
+          {
+            cover: '',
+            name: '2014 Forest Hills Drive',
+            artist: 'J. Cole',
+            price: 11.99
+          }
+        }/>
 
+      </div>
+      <div className="cartContainer">
+        <div className="cart">
+          Shopping Cart: {items} Items <br/>
+          Total: ${total}
+        </div>
+        <button onClick={handleClear}>Clear Cart</button>
       </div>
     </div>
 
